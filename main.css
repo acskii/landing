@@ -65,7 +65,7 @@ img {
     height: auto;
 }
 
-button {
+.button {
     background-color: var(--light-blue);
     font-weight: bold;
     padding: 8px 24px;
@@ -73,8 +73,7 @@ button {
     border: 0;
     border-radius: 6px;
     font-size: 18px;
-    color: var(--white);
-    margin-top: 1em;
+    color: var(--white);    
 }
 
 main {
@@ -103,6 +102,7 @@ header .column {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap: 1vh;
     padding-top: 1vh;
 }
@@ -115,6 +115,19 @@ header ul {
     gap: 18px;
     color: var(--white);
 }
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5vw;
+}
+
+header img {
+    max-width: 50px;
+}
+
 /* === */
 
 /* FOOTER */
@@ -131,11 +144,13 @@ footer .column {
     font-size: 48px;
     font-weight: 900;
     color: var(--white);
+    padding-bottom: 1vh;
 }
 
 .side-by-side p {
     font-size: 18px;
     color: var(--gray);
+    padding-bottom: 2vh;
 }
 
 .side-by-side img {
@@ -193,8 +208,8 @@ footer, header, .side-by-side {
 }
 
 .cards figure img {
-    border: 4px solid var(--light-blue);
-    border-radius: 5px;
+    /* border: 4px solid var(--light-blue); */
+    /* border-radius: 5px; */
     margin-bottom: 5px;
 }
 
@@ -228,7 +243,7 @@ footer, header, .side-by-side {
     color: var(--white);
 }
 
-.action-box button {
+.action-box a {
     color: var(--white);
     border: 2px solid var(--white);
     margin-top: 0;
